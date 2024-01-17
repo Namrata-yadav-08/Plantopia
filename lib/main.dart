@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plantopia/screens/community.dart';
+import 'package:plantopia/screens/community1.dart';
 import 'package:plantopia/screens/game.dart';
 import 'package:plantopia/screens/homescreen.dart';
 import 'package:plantopia/screens/introscreen.dart';
@@ -24,13 +25,14 @@ class MyApp extends StatelessWidget {
       routes: {
         'homescreen': (context) => const Home_Screen(),
         'nav': (context) => const Nav(),
+        'comm': (context) => comm(),
         'profile': (context) => const Profile(),
         'introscreen': (context) => const Intro_Screen(),
         'community': (context) => Community(),
         'game': (context) => Game(),
         'signin': (context) => SignIn(),
         'signup': (context) => SignUp(),
-        'splashscreen': (context) => Splash_Screen(),
+        'splashscreen': (context) => SplashScreen(),
       },
     );
   }
