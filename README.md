@@ -13,7 +13,7 @@ Plantopia is a Git repository designed to nurture your passion for the environme
  -Prerequisites
     Git installed
  -Clone the Repository
-    git clone https://github.com/your_username/plantopia.git
+    git clone https://github.com/Namrata-yadav-08/plantopia.git
     cd plantopia
 #Contributing
   We welcome contributions! If you have ideas for new features, improvements, or bug fixes, 
