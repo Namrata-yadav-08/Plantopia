@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plantopia/screens/community.dart';
+import 'package:plantopia/screens/community1.dart';
 import 'package:plantopia/screens/game.dart';
 import 'package:plantopia/screens/homescreen.dart';
 import 'package:plantopia/screens/profile.dart';
@@ -13,12 +14,7 @@ class Nav extends StatefulWidget {
 
 class _NavState extends State<Nav> {
   int _index = 0;
-  final screens = [
-    const Home_Screen(),
-    const Game(),
-    Community(),
-    const Profile()
-  ];
+  final screens = [const Home_Screen(), const Game(), comm(), const Profile()];
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
