@@ -8,6 +8,7 @@ import 'package:plantopia/screens/profile.dart';
 import 'package:plantopia/screens/signin.dart';
 import 'package:plantopia/screens/signup.dart';
 import 'package:plantopia/screens/splashscreen.dart';
+import 'package:plantopia/widgets/Header.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'nav',
+      initialRoute: 'profile',
       routes: {
         'homescreen': (context) => const Home_Screen(),
         'nav': (context) => const Nav(),
@@ -28,9 +29,17 @@ class MyApp extends StatelessWidget {
         'introscreen': (context) => const Intro_Screen(),
         'community': (context) => Community(),
         'game': (context) => Game(),
-        'signin': (context) => SignIn(),
-        'signup': (context) => SignUp(),
+        'signin': (context) => SignIn(
+              onTap: () {},
+            ),
+        'signup': (context) => SignUp(
+              onTap: () {},
+            ),
         'splashscreen': (context) => Splash_Screen(),
+        'header': (context) => Header(
+              text1: 'hello',
+              text2: 'hii',
+            )
       },
     );
   }
