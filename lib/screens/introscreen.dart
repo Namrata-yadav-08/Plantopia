@@ -95,16 +95,15 @@ class _Intro_ScreenState extends State<Intro_Screen> {
             height: ScreenSize.height(context) * 0.02,
           ),
           CustomButton(
-              text: 'Sign Up',
-              onPressed: () {
-                print('Sign Up button pressed');
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => SignUp(
-                          onTap: () {},
-                        )));
-              },
-            ),
-          
+            text: 'Sign Up',
+            onPressed: () {
+              print('Sign Up button pressed');
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => SignUp(
+                        onTap: () {},
+                      )));
+            },
+          ),
         ],
       ),
     );
