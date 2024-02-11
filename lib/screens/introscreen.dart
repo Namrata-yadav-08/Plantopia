@@ -20,13 +20,8 @@ class _Intro_ScreenState extends State<Intro_Screen> {
       body: Column(
         children: [
           Container(
-            height: ScreenSize.height(context) *
-                0.52, // Adjust the height as needed
+            height: ScreenSize.height(context) * 0.52,
             decoration: BoxDecoration(
-              // gradient: LinearGradient(colors: [
-              //   Color.fromARGB(201, 17, 136, 68),
-              //   Color.fromARGB(0, 217, 217, 217)
-              // ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
               image: DecorationImage(
                 image: AssetImage('assets/images/plant05 1.png'),
                 fit: BoxFit.fitWidth,
@@ -81,28 +76,13 @@ class _Intro_ScreenState extends State<Intro_Screen> {
           SizedBox(
             height: ScreenSize.height(context) * 0.05625,
           ),
-          CustomButton(
-            text: 'Sign In',
-            onPressed: () {
-              print('Sign In button pressed');
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => SignIn(
-                        onTap: () {},
-                      )));
-            },
-          ),
+          CustomButton(text: 'Sign In', routeName: 'signin'),
           SizedBox(
             height: ScreenSize.height(context) * 0.02,
           ),
           CustomButton(
             text: 'Sign Up',
-            onPressed: () {
-              print('Sign Up button pressed');
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => SignUp(
-                        onTap: () {},
-                      )));
-            },
+            routeName: 'signin',
           ),
         ],
       ),

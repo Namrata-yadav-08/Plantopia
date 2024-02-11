@@ -1,7 +1,10 @@
+//import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:plantopia/widget/Newsfeed.dart';
+import 'package:plantopia/widgets/screensize.dart';
 
 class comm extends StatefulWidget {
   const comm({Key? key}) : super(key: key);
@@ -247,7 +250,7 @@ class _CustomFloatingActionButtonLocation extends FloatingActionButtonLocation {
   @override
   Offset getOffset(ScaffoldPrelayoutGeometry scaffoldGeometry) {
     // Adjust the vertical offset to position the button slightly above its default position
-    return Offset(340, 560.0);
+    return const Offset(340, 740);
   }
 
   @override

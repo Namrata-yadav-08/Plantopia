@@ -1,6 +1,7 @@
 // import 'dart:async';
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:plantopia/screens/introscreen.dart';
 import 'package:plantopia/screens/nav.dart';
 
 // import 'welcome_screeen.dart';
@@ -38,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => Nav(),
+            builder: (context) => Intro_Screen(),
           ));
     });
   }

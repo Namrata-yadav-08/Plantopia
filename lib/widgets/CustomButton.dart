@@ -6,9 +6,11 @@ import 'package:plantopia/widgets/screensize.dart';
 
 class CustomButton extends StatefulWidget {
   final String text;
-  final VoidCallback onPressed;
+  // final VoidCallback onPressed;
+  final String routeName;
 
-  CustomButton({required this.text, required this.onPressed});
+  //CustomButton({required this.text, required this.onPressed});
+  CustomButton({required this.text, required this.routeName});
   @override
   _CustomButtonState createState() => _CustomButtonState();
 }
@@ -27,6 +29,7 @@ class _CustomButtonState extends State<CustomButton> {
         setState(() {
           isPressed = false;
         });
+        _navigateToRoute(context);
       },
       onTapCancel: () {
         setState(() {
@@ -46,9 +49,6 @@ class _CustomButtonState extends State<CustomButton> {
               ? Color.fromARGB(255, 17, 136, 68)
               : Color.fromARGB(255, 235, 253, 242),
         ),
-        // padding: EdgeInsets.symmetric(
-        //     vertical: ScreenSize.height(context) * 0.018875,
-        //     horizontal: ScreenSize.width(context) * 0.0416),
         child: Center(
           child: Text(
             widget.text,
@@ -65,5 +65,11 @@ class _CustomButtonState extends State<CustomButton> {
         ),
       ),
     );
+  }
+
+  void _navigateToRoute(BuildContext context) {
+    if (widget.routeName.isNotEmpty) {
+      Navigator.of(context).pushNamed(widget.routeName);
+    }
   }
 }
