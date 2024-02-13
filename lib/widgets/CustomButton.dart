@@ -6,10 +6,9 @@ import 'package:plantopia/widgets/screensize.dart';
 
 class CustomButton extends StatefulWidget {
   final String text;
-  // final VoidCallback onPressed;
+
   final String routeName;
 
-  //CustomButton({required this.text, required this.onPressed});
   CustomButton({required this.text, required this.routeName});
   @override
   _CustomButtonState createState() => _CustomButtonState();

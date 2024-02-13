@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:plantopia/screens/user_controller.dart';
-import 'package:plantopia/widget/Newsfeed.dart';
+import 'package:plantopia/widgets/Newsfeed.dart';
 import 'package:plantopia/widgets/screensize.dart';
 //import 'package:location/location.dart';
 

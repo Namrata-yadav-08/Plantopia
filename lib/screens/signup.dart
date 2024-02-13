@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:plantopia/screens/signin.dart';
 import 'package:plantopia/widgets/Header.dart';
+import 'package:plantopia/widgets/footer.dart';
+import 'package:plantopia/widgets/inputFields.dart';
+import 'package:plantopia/widgets/screensize.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({
@@ -15,6 +16,10 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  TextEditingController nameController = TextEditingController();
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
   // var emailtext = TextEditingController();
   // var password = TextEditingController();
   // var confirmpass = TextEditingController();
@@ -77,9 +82,53 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Header(text1: 'Sign Up', text2: 'Create your new account'),
-      // _inputField(context),
-      // outlinebuttn(context),
+      body: Column(
+        children: [
+          Header(
+            text1: 'Sign Up',
+            text2: 'Create your new account',
+          ),
+          CustomInputField(
+            hintText: 'Fist and last name',
+            icon: Icons.person,
+            controller: nameController,
+          ),
+          SizedBox(
+            height: ScreenSize.height(context) * 0.02,
+          ),
+          CustomInputField(
+            hintText: 'Username',
+            icon: Icons.person,
+            controller: usernameController,
+          ),
+          SizedBox(
+            height: ScreenSize.height(context) * 0.02,
+          ),
+          CustomInputField(
+            hintText: 'Email',
+            icon: Icons.mail,
+            controller: emailController,
+          ),
+          SizedBox(
+            height: ScreenSize.height(context) * 0.02,
+          ),
+          CustomInputField(
+            hintText: 'Password',
+            icon: Icons.lock,
+            controller: passwordController,
+          ),
+          SizedBox(
+            height: ScreenSize.height(context) * 0.0275,
+          ),
+          Footer(
+            text3: 'Sign Up',
+            onPressed: () {},
+            text4: "Already have an account?",
+            text5: 'Sign In',
+            routeName: 'signin',
+          )
+        ],
+      ),
     );
   }
 }

@@ -2,7 +2,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:plantopia/screens/introscreen.dart';
-import 'package:plantopia/screens/nav.dart';
 
 // import 'welcome_screeen.dart';
 class SplashScreen extends StatefulWidget {

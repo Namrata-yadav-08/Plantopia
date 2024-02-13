@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:plantopia/screens/signin.dart';
-import 'package:plantopia/screens/signup.dart';
 import 'package:plantopia/widgets/CustomButton.dart';
 import 'package:plantopia/widgets/screensize.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -82,7 +80,7 @@ class _Intro_ScreenState extends State<Intro_Screen> {
           ),
           CustomButton(
             text: 'Sign Up',
-            routeName: 'signin',
+            routeName: 'signup',
           ),
         ],
       ),

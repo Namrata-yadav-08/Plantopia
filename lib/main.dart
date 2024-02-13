@@ -8,7 +8,6 @@ import 'package:plantopia/screens/profile.dart';
 import 'package:plantopia/screens/signin.dart';
 import 'package:plantopia/screens/signup.dart';
 import 'package:plantopia/screens/splashscreen.dart';
-import 'package:plantopia/widgets/Header.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -36,10 +35,6 @@ class MyApp extends StatelessWidget {
               onTap: () {},
             ),
         'splashscreen': (context) => SplashScreen(),
-        'header': (context) => Header(
-              text1: 'hello',
-              text2: 'hii',
-            )
       },
     );
   }
