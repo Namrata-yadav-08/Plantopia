@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:plantopia/screens/community1.dart';
 import 'package:plantopia/widgets/Header.dart';
 import 'package:plantopia/widgets/footer.dart';
 import 'package:plantopia/widgets/inputFields.dart';
@@ -114,7 +115,9 @@ class _SignInState extends State<SignIn> {
             ),
             Footer(
               text3: 'Sign In',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> comm()));
+              },
               text4: "Don't have an account?",
               text5: 'Sign Up',
               routeName: 'signup',

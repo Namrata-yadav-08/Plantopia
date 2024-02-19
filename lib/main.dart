@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plantopia/screens/Home.dart';
 import 'package:plantopia/screens/community1.dart';
 import 'package:plantopia/screens/game.dart';
 import 'package:plantopia/screens/homescreen.dart';
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'splashscreen',
+      initialRoute: 'home',
       routes: {
+        'home': (context) => const Home(),
         'homescreen': (context) => const Home_Screen(),
         'nav': (context) => const Nav(),
         'comm': (context) => comm(),
